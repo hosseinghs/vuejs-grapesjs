@@ -2,8 +2,7 @@ import axios from "axios";
 
 const API = {
   init() {
-    axios.defaults.baseURL =
-      "https://my-json-server.typicode.com/typicode/demo/";
+    axios.defaults.baseURL = "https://staging-4.ibdok.ir/api/sandbox/";
   },
 
   query(route, params) {
