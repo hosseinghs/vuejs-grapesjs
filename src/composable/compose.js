@@ -15,7 +15,7 @@ export default async function (editor) {
       },
       async init() {
         await store.getProductWithId();
-        const res = computed(() => store.products);
+        const res = computed(() => store.product);
         res.value.forEach(({ body }) => this.append(body));
       },
     },
