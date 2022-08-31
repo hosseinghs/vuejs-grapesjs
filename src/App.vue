@@ -7,12 +7,13 @@
 import { onMounted } from "vue";
 import grapesjs from "grapesjs";
 import compose from "@/composable/compose";
+import basket from "@/composable/basket";
 
 onMounted(() => {
   grapesjs.init({
     container: "#gjs",
     fromElement: true,
-    plugins: [compose],
+    plugins: [compose, basket],
     height: "100vh",
     width: "auto",
     storageManager: false,
