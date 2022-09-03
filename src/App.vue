@@ -22,14 +22,17 @@ onMounted(() => {
 </script>
 
 <style>
+@font-face {
+  font-family: sans;
+  src: url("./assets/IRANSansMedium.ttf");
+}
+
 body {
   margin: 0;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans !important;
   text-align: center;
   color: #2c3e50;
 }
