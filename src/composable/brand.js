@@ -1,11 +1,17 @@
 export default async function (editor) {
   const domComponents = editor.DomComponents;
 
+  function script() {
+    console.log("hello");
+  }
+
   domComponents.addType("brand", {
     model: {
       defaults: {
-        component: "brand component",
+        script,
+        components: "brand component",
       },
+
       async init() {
         console.log("res");
       },
@@ -14,6 +20,6 @@ export default async function (editor) {
 
   editor.BlockManager.add("brand", {
     label: "brand comp",
-    content: { type: "test" },
+    content: { type: "brand" },
   });
 }
