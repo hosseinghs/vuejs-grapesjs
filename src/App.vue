@@ -12,12 +12,13 @@ import brand from "@/composable/brand";
 import name from "@/composable/name";
 import product from "@/composable/product";
 import productPage from "@/composable/productPage";
+import tabs from "@/composable/tabs";
 
 onMounted(() => {
   grapesjs.init({
     container: "#gjs",
     fromElement: true,
-    plugins: [compose, basket, brand, name, product, productPage],
+    plugins: [compose, basket, brand, tabs, name, product, productPage],
     height: "100vh",
     width: "auto",
     storageManager: false,
