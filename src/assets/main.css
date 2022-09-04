@@ -1,0 +1,15 @@
+@font-face {
+  font-family: sans;
+  src: url("./IRANSansMedium.ttf");
+}
+
+body {
+  font-family: sans;
+  margin: 0;
+}
+
+#app {
+  font-family: sans !important;
+  text-align: center;
+  color: #2c3e50;
+}

@@ -24,20 +24,3 @@ onMounted(() => {
   });
 });
 </script>
-
-<style>
-@font-face {
-  font-family: sans;
-  src: url("./assets/IRANSansMedium.ttf");
-}
-
-body {
-  margin: 0;
-}
-
-#app {
-  font-family: sans !important;
-  text-align: center;
-  color: #2c3e50;
-}
-</style>

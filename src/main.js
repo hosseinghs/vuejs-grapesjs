@@ -5,6 +5,7 @@ import App from "./App.vue";
 import API from "./services/api";
 import "grapesjs/dist/css/grapes.min.css";
 import grapesjs from "grapesjs";
+import "./assets/main.css";
 
 const app = createApp(App);
 
