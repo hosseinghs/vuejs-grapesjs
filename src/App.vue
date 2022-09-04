@@ -9,12 +9,13 @@ import grapesjs from "grapesjs";
 import compose from "@/composable/compose";
 import basket from "@/composable/basket";
 import brand from "@/composable/brand";
+import name from "@/composable/name";
 
 onMounted(() => {
   grapesjs.init({
     container: "#gjs",
     fromElement: true,
-    plugins: [brand, compose, basket],
+    plugins: [brand, compose, basket, name],
     height: "100vh",
     width: "auto",
     storageManager: false,
