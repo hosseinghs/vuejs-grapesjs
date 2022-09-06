@@ -62,9 +62,8 @@ export default async function (editor) {
     `;
   };
 
-  const script = function () {
-    const btn = document.getElementById("btn");
-    console.log(btn);
+  const script = function ({ productData }) {
+    setTimeout(() => console.log(productData), 2000);
   };
 
   domComponent.addType("product-page", {
@@ -197,10 +196,19 @@ export default async function (editor) {
             border-radius: 7px;
          }
         `,
+        productData: {},
+        traits: [
+          {
+            name: "productData",
+            changeProp: true,
+          },
+        ],
+        "script-props": ["productData"],
       },
 
       async init() {
         const res = await store.getProductWithId();
+        this.setAttributes({ productData: res });
         this.components(component(res));
       },
     },
